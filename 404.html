@@ -5,13 +5,16 @@
     <title>正在重定向…… - walterlv</title>
 </head>
     <script language="javascript">
-        var domain = "blog.walterlv.com";
+        var domain = "blog.shadiao.win";
         var current = window.location.href;
         var target = current.substring(current.indexOf('/', current.indexOf(':') + 3));
-        window.location.href = "//" + domain + target;
-        location.href = "//" + domain + target;
+	setTimeout(function() {
+	    // Your code here
+            window.location.href = "//" + domain + target;
+            location.href = "//" + domain + target;
+	}, 5000);
     </script>
     <body>
-        这个域名要被扬啦！！新域名是blog.shadiao.win！！正在重定向……
+        这个域名要被扬啦！！新域名是blog.shadiao.win！！会在5秒后自动跳转哦！！……
     </body>
 </html>
